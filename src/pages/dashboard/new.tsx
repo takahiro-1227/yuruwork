@@ -4,7 +4,6 @@ import { EditArticle } from "../../components/dashboard/EditArticle";
 import EditorJS from '@editorjs/editorjs';
 import Header from '@editorjs/header';
 // import List from '@editorjs/list';
-const List = require('@editorjs/list');
 
 const CREATE_POST = gql`
   mutation CreatePost($title: String!, $content: String!, $slug: String!) {
@@ -18,7 +17,6 @@ const editor = new EditorJS({
   holder: 'editorjs',
   tools: {
     header: Header,
-    list: List
   },
 })
 

@@ -22,3 +22,4 @@ curl --request POST \
   --header 'content-type: application/json' \
   --url http://localhost:3000/api/post \
   --data '{"query": "mutation{updatePost(id: 4, slug: \"test6\", title: \"test6\", content: \"test6-1\"){title, content}}"}'
+
